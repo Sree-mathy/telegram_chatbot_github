@@ -1,7 +1,7 @@
 from telegram.ext import Updater,MessageHandler,Filters
 from Adafruit_IO import Client
 
-aio = Client('Sreemathy', 'aio_dSmZ80nxw9W3MRbQOFmjgupT783D')
+aio = Client('Sreemathy', os.getenv('Sreemathy'))
 
 def lighton(bot,update):
   chat_id=bot.message.chat_id
@@ -56,7 +56,7 @@ def main(bot,update):
     
 
 
-BOT_TOKEN='1883327834:AAFUTP9xQsls5lRZw0lXq5f9J_ol0e596v4'
+BOT_TOKEN=os.getenv('BOT_TOKEN')
 u=Updater(BOT_TOKEN,use_context=True)
 dp=u.dispatcher
 dp.add_handler(MessageHandler(Filters.text,main))
