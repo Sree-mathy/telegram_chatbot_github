@@ -1,1 +1,1 @@
-# twitter_chatbot_github
+# telegram_chatbot_github
