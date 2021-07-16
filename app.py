@@ -41,7 +41,6 @@ def fan_off(bot,update):
   update.bot.sendPhoto(chat_id=chat_id,photo=path)
 
 
-
 def main(bot,update):
   a=bot.message.text
   print(a)
